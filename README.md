@@ -202,8 +202,7 @@ Through this project, I gained hands-on experience in:
 **Meghana Paradeshi**
 
 B.Tech Student | Cloud Engineer Aspirant | Frontend Developer
-
-GitHub: https://github.com/YOUR_USERNAME
+https://github.com/Meghana1125-ui/travelies-travel-booking-website
 
 ---
 
