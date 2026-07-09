@@ -4,6 +4,17 @@ Travelies is a modern and fully responsive travel booking website built using **
 
 ---
 
+# ✈️ Travelies - Travel Booking Website
+
+🌐 Live Demo:
+https://meghana1125-ui.github.io/travelies-travel-booking-website/
+
+📂 GitHub Repository:
+https://github.com/Meghana1125-ui/travelies-travel-booking-website
+
+---
+
+
 ## 🌍 Project Overview
 
 Travelies is designed to simplify travel planning by offering:
