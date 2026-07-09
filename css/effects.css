@@ -1,0 +1,274 @@
+/* ==========================
+   GLOBAL ANIMATIONS
+========================== */
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Fade In */
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Slide Left */
+
+@keyframes slideLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Slide Right */
+
+@keyframes slideRight {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Zoom In */
+
+@keyframes zoomIn {
+    from {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* Float Animation */
+
+@keyframes float {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+/* Pulse */
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.05);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* ==========================
+   HERO SECTION
+========================== */
+
+.hero-content {
+    animation: fadeIn 1s ease;
+}
+
+.hero-image img {
+    animation: float 4s ease-in-out infinite;
+}
+
+/* ==========================
+   DESTINATION CARDS
+========================== */
+
+.destination-card {
+    animation: fadeIn 0.8s ease;
+    transition: all 0.3s ease;
+}
+
+.destination-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* ==========================
+   PACKAGE CARDS
+========================== */
+
+.package-card {
+    transition: all 0.3s ease;
+}
+
+.package-card:hover {
+    transform: scale(1.03);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* ==========================
+   BUTTONS
+========================== */
+
+button,
+.btn {
+    transition: all 0.3s ease;
+}
+
+button:hover,
+.btn:hover {
+    transform: translateY(-3px);
+}
+
+button:active,
+.btn:active {
+    transform: scale(0.96);
+}
+
+/* ==========================
+   WEATHER CARDS
+========================== */
+
+.weather-card {
+    animation: zoomIn 0.8s ease;
+    transition: all 0.3s ease;
+}
+
+.weather-card:hover {
+    transform: translateY(-8px);
+}
+
+/* ==========================
+   TESTIMONIALS
+========================== */
+
+.testimonial-card {
+    transition: all 0.3s ease;
+}
+
+.testimonial-card:hover {
+    transform: scale(1.03);
+}
+
+/* ==========================
+   FAQ
+========================== */
+
+.faq-item {
+    transition: all 0.3s ease;
+}
+
+.faq-item:hover {
+    transform: translateX(5px);
+}
+
+/* ==========================
+   MODAL
+========================== */
+
+.modal-content {
+    animation: zoomIn 0.4s ease;
+}
+
+/* ==========================
+   BACK TO TOP
+========================== */
+
+#backToTop {
+    transition: all 0.3s ease;
+}
+
+#backToTop:hover {
+    transform: scale(1.1);
+}
+
+/* ==========================
+   FOOTER ICONS
+========================== */
+
+.footer-social a {
+    transition: all 0.3s ease;
+}
+
+.footer-social a:hover {
+    transform: translateY(-4px);
+}
+
+/* ==========================
+   LOADER
+========================== */
+
+.loader {
+    animation: pulse 1.5s infinite;
+}
+
+@media(max-width:900px){
+    .destination-container{
+        grid-template-columns:repeat(2,1fr);
+    }
+}
+
+@media(max-width:600px){
+    .destination-container{
+        grid-template-columns:1fr;
+    }
+}
+
+
+
+@media(min-width:768px) and (max-width:1023px){
+
+.destination-container,
+.package-container,
+.wishlist-grid,
+.trips-grid{
+    justify-content:center;
+}
+
+.destination-card,
+.package-card,
+.wishlist-card,
+.trip-card{
+    width:45%;
+}
+
+.contact-content{
+    flex-direction:column;
+}
+
+.booking-form{
+    width:90%;
+}
+
+.hero-buttons{
+    justify-content:center;
+}
+
+}
